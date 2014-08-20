@@ -147,6 +147,12 @@ void get(char *uri, char *param, int header_count, char **headers)
 	printf("Request headers: %d\r\n", header_count);
 	for (i = 0; i < header_count; i++)
 		printf("\t%s\r\n", headers[i]);
+	for (i = 0; i< 10000; i++){
+		if(i%2)printf("Pro ");
+		else printf("Shumi ");
+	}
+	puts("");
+	printf("Hello,world!\n");
 }
 
 void post(char *uri, char *param, int header_count, char **headers)
